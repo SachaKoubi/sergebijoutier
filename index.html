@@ -15,16 +15,16 @@
   <link rel="stylesheet" href="./assets/css/index.bundle.css" />
   
   <!-- Title -->
-  <title>Blog</title></head>
+  <title>Software</title></head>
 
 <body>
 
 
   <!-- navbar -->
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-dark">
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-light">
     <div class="container">
-      <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-light.svg" alt="Logo"></a>
-  
+      <a href="./index.html" class="navbar-brand fs-1 "><img src="./assets/images/logo/Serge.png" alt="Logo" style="max-height: 5rem;"></a>
+
       <!-- secondary -->
       <ul class="navbar-nav navbar-nav-secondary order-lg-3">
         <li class="nav-item d-lg-none">
@@ -34,13 +34,14 @@
           </a>
         </li>
         <li class="nav-item d-none d-lg-block">
-          <a href="https://meetings.hubspot.com/warren-chikli/rendez-vous-boutique?uuid=2b03e5b1-f23d-4075-848d-7d3ddb184191"  target="_blank" class="btn btn-outline-white rounded-pill ms-2">Planifier mon expertise</a>
-
+          <a href="" class="btn btn-outline-black rounded-pill ms-2">
+            Planifiez votre expertise
+          </a>
         </li>
       </ul>
   
       <!-- primary -->
-      <div class="collapse navbar-collapse" id="navbar" data-bs-parent="#mainNav">
+      <div class="collapse navbar-collapse d-none" id="navbar" data-bs-parent="#mainNav">
         <ul class="navbar-nav d-none">
           <li class="nav-item dropdown dropdown-hover">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1" role="button" data-bs-toggle="dropdown"
@@ -60,7 +61,7 @@
               <li><a class="dropdown-item "
                   href="./agency.html">Agency</a>
               </li>
-              <li><a class="dropdown-item active" href="./blog.html">Blog</a>
+              <li><a class="dropdown-item " href="./blog.html">Blog</a>
               </li>
               <li><a class="dropdown-item "
                   href="./product.html">Product</a></li>
@@ -75,7 +76,7 @@
               </li>
               <li><a class="dropdown-item "
                   href="./service.html">Service</a></li>
-              <li><a class="dropdown-item "
+              <li><a class="dropdown-item active"
                   href="./software.html">Software</a></li>
               <li><a class="dropdown-item "
                   href="./documentation.html">Documentation</a></li>
@@ -234,161 +235,198 @@
 
 
   <!-- header -->
-  <section class="overflow-hidden inverted ">
-    <div class="carousel">
-      <div
-        data-carousel='{"loop": true, "controls": false,"mode": "gallery", "navContainer": "#nav-1", "navAsThumbnail": true}'>
-        <div>
-          <div class="d-flex flex-column py-20 min-vh-100 container foreground">
-            <div class="row justify-content-center my-auto">
-              <div class="col-lg-10 col-xl-8 text-center">
-                <span class="eyebrow mb-2 text-secondary">Depuis 1974</span>
-                <h1 class="fw-bold">Expertisez gratuitement vos bijoux, sur rendez-vous.</h1>
-                <a href="https://meetings.hubspot.com/warren-chikli/rendez-vous-boutique?uuid=2b03e5b1-f23d-4075-848d-7d3ddb184191"  target="_blank" class="btn btn-white rounded-pill">Planifier mon expertise</a>
-              </div>
-            </div>
+  <section class="bg-opaque-green">
+    <div class="container d-flex flex-column py-20">
+      <div class="row align-items-center justify-content-center justify-content-lg-between mt-lg-10">
+        <div class="col-md-10 col-lg-5 text-center text-lg-start level-3">
+          <h1 class="fw-light">Expertisez gratuitement vos bijoux, sur rendez-vous.<span class="fw-bold"
+             ></span></h1>
+          <p class="lead text-secondary mb-2">
+            Notre boutique, située au <strong>97 boulevard Magenta, Paris 10e</strong>, vous accueille dans un cadre confidentiel pour une estimation gratuite de vos bijoux, diamants et pierres précieuses.
+            Si vous le souhaitez, nous pouvons également vous proposer une offre d’achat.
+          </p>
+
+          <div class="">
+            <p class="text-secondary mb-1"><i class="bi bi-geo-alt me-2"></i>97 Boulevard Magenta, 75010 Paris</p>
+            <p class="text-secondary mb-0">
+              <i class="bi bi-telephone me-2"></i>
+              <a href="tel:+33147701089" class="text-secondary text-decoration-none">01 47 70 10 89</a>
+            </p>
           </div>
-          <figure class="background background-overlay" style="background-image: url('./assets/images/reflexion-design-bague.jpg')"
-            data-top-top="transform: scale(1);" data-top-bottom="transform: scale(1.1);"></figure>
+          <a href="" class="btn btn-green btn-with-icon rounded-pill btn-lg mt-2">Planifier mon expertise<i
+                  class="bi bi-arrow-right"></i></a>
         </div>
-
-        <div>
-          <div class="d-flex flex-column py-20 min-vh-100 container foreground">
-            <div class="row justify-content-center my-auto">
-              <div class="col-lg-10 col-xl-8 text-center">
-                <span class="eyebrow mb-2 text-secondary">Depuis 1974</span>
-                <h1 class="fw-bold">Expertisez gratuitement vos pierres précieuses, sur rendez-vous.</h1>
-                <a href="https://meetings.hubspot.com/warren-chikli/rendez-vous-boutique?uuid=2b03e5b1-f23d-4075-848d-7d3ddb184191"  target="_blank" class="btn btn-white rounded-pill">Planifier mon expertise</a>
-
-              </div>
-            </div>
-          </div>
-          <figure class="background background-overlay" style="background-image: url('./assets/images/joaillerie.jpg')"
-            data-top-top="transform: scale(1);" data-top-bottom="transform: scale(1.1);"></figure>
-        </div>
-
-        <div>
-          <div class="d-flex flex-column py-20 min-vh-100 container foreground">
-            <div class="row justify-content-center my-auto">
-              <div class="col-lg-10 col-xl-8 text-center">
-                <span class="eyebrow mb-2 text-secondary">Depuis 1974</span>
-                <h1 class="fw-bold">Expertisez gratuitement vos bijoux anciens, sur rendez-vous.</h1>
-                <a href="https://meetings.hubspot.com/warren-chikli/rendez-vous-boutique?uuid=2b03e5b1-f23d-4075-848d-7d3ddb184191"  target="_blank" class="btn btn-white rounded-pill">Planifier mon expertise</a>
-
-              </div>
-            </div>
-          </div>
-          <figure class="background background-overlay" style="background-image: url('./assets/images/horlogerie.jpg')"
-            data-top-top="transform: scale(1);" data-top-bottom="transform: scale(1.1);"></figure>
-        </div>
-
       </div>
     </div>
-    <div class="tns-thumbs">
-      <div class="container">
-        <div class="row" id="nav-1">
-          <div class="col">
-            <span class="tns-thumbs-item text-center text-lg-start py-5 py-lg-8">
-              <span class="d-lg-none fs-4">1</span>
-              <h3 class="fs-6 fw-normal d-none d-lg-block mt-1">
-                Expertisez vos bijoux
-              </h3>
+    <div class="container-fluid back back-static">
+      <div class="row justify-content-end h-100">
+        <div class="col-lg-6 overflow-hidden position-relative" data-aos="fade-in">
+          <figure class="media media-image" >
+            <span style="background-image: url('./assets/images/reflexion-design-bague.jpg')">
             </span>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- logo list -->
+  <section class="py-15 border-bottom d-none">
+    <div class="container ">
+      <div class="carousel carousel-align text-center">
+        <div
+          data-carousel='{"gutter": 48, "loop": false, "nav": false, "controls": false, "responsive": {"0": {"items": 2}, "768": {"items": 4}, "1200": {"items": 5}}}'>
+          <div>
+            <img src="./assets/images/logo/logo-1.svg" alt="Logo" class="logo">
           </div>
-          <div class="col">
-            <span class="tns-thumbs-item text-center text-lg-start py-5 py-lg-8">
-              <span class="d-lg-none fs-4">2</span>
-              <h3 class="fs-6 fw-normal d-none d-lg-block mt-1">
-                Expertisez vos pierres précieuses
-              </h3>
-            </span>
+          <div>
+            <img src="./assets/images/logo/logo-2.svg" alt="Logo" class="logo">
           </div>
-          <div class="col">
-            <span class="tns-thumbs-item text-center text-lg-start py-5 py-lg-8">
-              <span class="d-lg-none fs-4">3</span>
-              <h3 class="fs-6 fw-normal d-none d-lg-block mt-1">
-                Expertisez vos bijoux anciens
-              </h3>
-            </span>
+          <div>
+            <img src="./assets/images/logo/logo-3.svg" alt="Logo" class="logo">
+          </div>
+          <div>
+            <img src="./assets/images/logo/logo-4.svg" alt="Logo" class="logo">
+          </div>
+          <div>
+            <img src="./assets/images/logo/logo-5.svg" alt="Logo" class="logo">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- numbers -->
-  <section class="pb-15 pb-xl-20 mt-3">
+
+  <!-- features -->
+  <section class="py-15 py-xl-20">
     <div class="container">
-      <div class="row mb-10">
-        <div class="col-lg-10">
-          <span class="eyebrow  mb-4">A propos de nous</span>
-          <h3 class="fs-4">Une expertise de confiance, transmise de père en fils.</h3>
-          <span class="">Fondée en 1974, Serge Bijoutier est une maison familiale transmise de père en fils depuis deux générations. Ce savoir-faire joaillier, patiemment cultivé au fil des décennies, s’incarne aujourd’hui dans une approche exigeante de l’expertise. Diamants, montres de collection, bijoux anciens ou contemporains… chaque pièce est examinée avec rigueur, dans un cadre confidentiel et sans aucun engagement.</span>
+      <div class="row justify-content-center mb-10">
+        <div class="col-lg-6 text-center">
+          <h2 class="fw-light">Estimez et vendez en toute simplicité.</h2>
+        </div>
+      </div>
+      <div class="row g-3 g-xl-5">
+        <div class="col-lg-4" data-aos="fade-up">
+          <div class="card bg-opaque-green">
+            <div class="card-header">
+              <i class="bi bi-bookmark fs-2 text-green"></i>
+            </div>
+            <div class="card-footer">
+              <h3 class="fs-5 text-green">Estimation experte</h3>
+              <p class="text-secondary">Recevez une évaluation précise et sans engagement de vos bijoux, réalisée par nos experts directement en boutique.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card bg-opaque-green">
+            <div class="card-header">
+              <i class="bi bi-brightness-high fs-2 text-green"></i>
+            </div>
+            <div class="card-footer">
+              <h3 class="fs-5 text-green">Processus transparent</h3>
+              <p class="text-secondary">Chaque étape de la vente est expliquée clairement, pour une expérience sereine et en toute confiance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card bg-opaque-green">
+            <div class="card-header">
+              <i class="bi bi-chat-text fs-2 text-green"></i>
+            </div>
+            <div class="card-footer">
+              <h3 class="fs-5 text-green">Offre immédiate</h3>
+              <p class="text-secondary">Si vous le souhaitez, nous vous faisons une proposition d’achat immédiate, sans obligation d’acceptation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <span class="d-block display-3 fw-bold">1000+</span>
-          <span class="lead text-secondary">expertises chaque année</span>
-        </div>
-        <div class="col">
-          <span class="d-block display-3 fw-bold">24h</span>
-          <span class="lead text-secondary">Estimation en 1 journée</span>
-        </div>
-        <div class="col">
-          <span class="d-block display-3 fw-bold">60 ans</span>
-          <span class="lead text-secondary">d'experience</span>
-        </div>
-        <div class="col">
-          <span class="d-block display-3 fw-bold">1h</span>
-          <span class="lead text-secondary">paiement immédiat</span>
-        </div>
-      </div>
-      <a href="https://meetings.hubspot.com/warren-chikli/rendez-vous-boutique?uuid=2b03e5b1-f23d-4075-848d-7d3ddb184191" target="_blank" class="btn btn-dark btn-lg btn-with-icon mt-4 ">
-        Planifier mon expertise <i class="bi bi-arrow-up-right"></i>
-      </a>
+      <a href="" class="btn btn-green btn-with-icon rounded-pill btn-lg mt-3">Planifier mon expertise<i
+              class="bi bi-arrow-right"></i></a>
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="inverted mx-xl-3 overflow-hidden  ">
-    <div class="d-flex flex-column container py-15 py-xl-20 min-vh-75 level-1">
-      <div class="row mb-8">
-        <div class="col text-center">
-          <h2 class="fs-1 fw-bold">Estimez et vendez en toute simplicité.</h2>
-        </div>
-      </div>
-      <div class="row g-4 g-lg-5 justify-content-center align-items-center mt-auto">
-        <div class="col-lg-3 text-center">
-          <h4 class="text-muted lh-sm fw-normal"><span class="text-white">Estimation gratuite</span> & Rapide
-          </h4>
-        </div>
-        <div class="col-4 col-md-2 col-lg-1">
-          <img class="img-fluid px-2 px-lg-0" src="./assets/images/svg/divider.svg" alt="Divider">
-        </div>
-        <div class="col-lg-3 text-center">
-          <h4 class="text-muted lh-sm fw-normal"><span class="text-white">Offre</span> immédiate</h4>
-        </div>
-        <div class="col-4 col-md-2 col-lg-1">
-          <img class="img-fluid px-2 px-lg-0" src="./assets/images/svg/divider.svg" alt="Divider">
-        </div>
-        <div class="col-lg-3 text-center">
-          <h4 class="text-muted lh-sm fw-normal"><span class="text-white">Paiement</span> Sécurisé
-          </h4>
-        </div>
-      </div>
-      <!-- CTA BUTTON AJOUTÉ ICI -->
-      <div class="row mt-6">
-        <div class="col text-center">
-          <a href="https://meetings.hubspot.com/warren-chikli/rendez-vous-boutique?uuid=2b03e5b1-f23d-4075-848d-7d3ddb184191"  target="_blank" class="btn btn-white rounded-pill">Planifier mon expertise</a>
 
+  <!-- browser -->
+  <section class="py-15 py-xl-20 border-top">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-6 inverted" data-aos="fade-up">
+          <div class="carousel carousel-with-nav">
+            <div data-carousel='{"mouseDrag": true, "gutter": 0, "loop": true, "items": 1, "nav": true}'>
+              <div>
+                <div class="browser bg-black">
+                  <img src="./assets/images/horlogerie.jpg" class="img-fluid" alt="Image">
+                  <span></span>
+                </div>
+              </div>
+
+              <div>
+                <div class="browser bg-black">
+                  <img src="./assets/images/joaillerie.jpg" class="img-fluid" alt="Image">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <ul class="list-group list-group-separated">
+            <li class="list-group-item">
+              <p class="text-muted lead"><span class="text-black">Fondée en 1974,</span> Serge Bijoutier est une maison familiale transmise de père en fils depuis deux générations. Ce savoir-faire joaillier, patiemment cultivé au fil des décennies, s’incarne aujourd’hui dans une approche exigeante de l’expertise. Diamants, montres de collection, bijoux anciens ou contemporains… chaque pièce est examinée avec rigueur, dans un cadre confidentiel et sans aucun engagement.</p>
+            </li>
+
+          </ul>
+          <a href="" class="underline action text-green fs-lg mt-5">En savoir plus <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
-
     </div>
-    <figure class="background background-overlay" style="background-image: url('./assets/images/horlogerie.jpg')">
-    </figure>
+  </section>
+
+
+  <!-- browser -->
+  <section class="pb-15 pb-xl-20">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-5">
+          <h2>Nous sommes des vrais experts</h2>
+          <ul class="list-group list-group-minimal">
+            <li class="list-group-item d-flex align-items-center">
+              <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                  class="bi bi-check2 text-green"></i>
+              </div>
+              Bijoux anciens
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                  class="bi bi-check2 text-green"></i>
+              </div>
+              Bijoux signés
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                  class="bi bi-check2 text-green"></i>
+              </div>
+              Pierres précieuses
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                      class="bi bi-check2 text-green"></i>
+              </div>
+              Or
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="">
+            <img src="./assets/images/7.jpg" class="img-fluid" alt="Image">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- reviews -->
@@ -466,232 +504,176 @@
     </div>
   </section>
 
+
+
   <!-- pricing -->
-  <section class="py-20 mx-xl-3 overflow-hidden bg-black inverted">
-    <div class="container foreground">
-      <div class="row justify-content-center">
-        <div class="col-lg-10 text-center">
-          <h2 class="fw-bold mb-4">
-            Un expert vous accueille dans un cadre discret, pour une expertise gratuite, claire et sans engagement.
-          </h2>
-
-          <div class="row mt-5 mb-2 justify-content-center">
-            <div class="col-md-5">
-              <ul class="list-group list-group-minimal">
-                <li class="list-group-item d-flex align-items-center justify-content-center">
-                  <i class="bi bi-check2 fs-5 me-2 text-yellow"></i> Expertise gratuite
-                </li>
-                <li class="list-group-item d-flex align-items-center justify-content-center">
-                  <i class="bi bi-check2 fs-5 me-2 text-yellow"></i> Rendez-vous sous 24h
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-5">
-              <ul class="list-group list-group-minimal list-group-sm">
-                <li class="list-group-item d-flex align-items-center justify-content-center">
-                  <i class="bi bi-check2 fs-5 me-2 text-yellow"></i> Service confidentiel
-                </li>
-                <li class="list-group-item d-flex align-items-center justify-content-center">
-                  <i class="bi bi-check2 fs-5 me-2 text-yellow"></i> Rachat immédiat
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <a href="https://meetings.hubspot.com/warren-chikli/rendez-vous-boutique?uuid=2b03e5b1-f23d-4075-848d-7d3ddb184191" target="_blank" class="btn btn-white btn-lg btn-with-icon mt-4 ">
-            Planifier mon expertise <i class="bi bi-arrow-up-right"></i>
-          </a>
-
-          <!-- Adresse + téléphone centrés -->
-          <div class="mt-5">
-            <p class="text-secondary mb-1"><i class="bi bi-geo-alt me-2"></i>97 Boulevard Magenta, 75010 Paris</p>
-            <p class="text-secondary mb-0">
-              <i class="bi bi-telephone me-2"></i>
-              <a href="tel:+33147701089" class="text-secondary text-decoration-none">01 47 70 10 89</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <img class="position-absolute top-0 start-0 translate-middle" src="./assets/images/svg/pattern-lg-light.svg" alt="Image">
-  </section>
-
-  <!-- posts -->
-  <section class="py-15 py-xl-20 d-none">
+  <section class="py-15 py-xl-20 bg-black inverted d-none">
     <div class="container">
-      <div class="row mb-2">
-        <div class="col">
-          <h2 class="eyebrow text-muted">Latest posts</h2>
+      <div class="row align-items-end g-4 g-lg-0">
+        <div class="col-xl-3 d-none d-xl-block">
+          <div class="card">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item ps-0 py-3">Unlimited Viewers</li>
+              <li class="list-group-item ps-0 py-3">Editors</li>
+              <li class="list-group-item ps-0 py-3">Multiplayer</li>
+              <li class="list-group-item ps-0 py-3">Developer handoff</li>
+              <li class="list-group-item ps-0 py-3">Support</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="row g-4 g-xl-5 justify-content-between mb-6">
-        <div class="col-md-6 col-lg-7" data-aos="fade-up">
-          <article class="card hover-arrow">
-            <a href="article.html"><img src="./assets/images/small-1.jpg" class="card-img-top" alt="Image"></a>
-            <div class="card-body p-0 pe-lg-10 mt-2">
-              <a href="article.html" class="card-title">
-                <h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
-              </a>
-              <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
-                2020</time>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card bg-green inverted">
+            <div class="card-body">
+              <h3 class="lead mb-2">Small</h3>
+              <span class="h2 fw-bold">$49</span>
+              <p class="mt-2 mb-4 text-secondary">Our basic version for teams that are just getting started</p>
+              <a href="" class="btn btn-outline-white btn-with-icon rounded-pill">Buy Now <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
-          </article>
-        </div>
-
-        <div class="col-md-6 col-lg-4" data-aos="fade-up">
-          <article class="card hover-arrow">
-            <a href="article.html"><img src="./assets/images/small-2.jpg" class="card-img-top" alt="Image"></a>
-            <div class="card-body p-0 pe-lg-10 mt-2">
-              <a href="article.html" class="card-title">
-                <h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
-              </a>
-              <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
-                2020</time>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-md-6 col-lg-6" data-aos="fade-up">
-          <article class="card hover-arrow">
-            <a href="article.html"><img src="./assets/images/small-3.jpg" class="card-img-top" alt="Image"></a>
-            <div class="card-body p-0 pe-lg-10 mt-2">
-              <a href="article.html" class="card-title">
-                <h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
-              </a>
-              <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
-                2020</time>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-md-6 col-lg-5" data-aos="fade-up">
-          <article class="card hover-arrow">
-            <a href="article.html"><img src="./assets/images/small-4.jpg" class="card-img-top" alt="Image"></a>
-            <div class="card-body p-0 pe-lg-10 mt-2">
-              <a href="article.html" class="card-title">
-                <h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
-              </a>
-              <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
-                2020</time>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-md-6 col-lg-5" data-aos="fade-up">
-          <article class="card hover-arrow">
-            <a href="article.html"><img src="./assets/images/small-5.jpg" class="card-img-top" alt="Image"></a>
-            <div class="card-body p-0 pe-lg-10 mt-2">
-              <a href="article.html" class="card-title">
-                <h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
-              </a>
-              <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
-                2020</time>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-md-6 col-lg-6" data-aos="fade-up">
-          <article class="card hover-arrow">
-            <a href="article.html"><img src="./assets/images/small-6.jpg" class="card-img-top" alt="Image"></a>
-            <div class="card-body p-0 pe-lg-10 mt-2">
-              <a href="article.html" class="card-title">
-                <h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
-              </a>
-              <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
-                2020</time>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col text-center">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-check2 me-2 fs-5 d-none d-xl-inline-block"></i> <span class="d-xl-none">Unlimited
+                  Viewers</span></li>
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-check2 me-2 fs-5 d-none d-xl-inline-block"></i> <span class="d-xl-none">Editors</span>
               </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item active"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-check2 me-2 fs-5 d-none d-xl-inline-block"></i> <span
+                  class="d-xl-none">Multiplayer</span>
+              </li>
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-x me-2 fs-5 d-none d-xl-inline-block text-muted"></i> <span class="d-xl-none">Developer
+                  handoff</span></li>
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-x me-2 fs-5 d-none d-xl-inline-block text-muted"></i> <span
+                  class="d-xl-none">Support</span>
               </li>
             </ul>
-          </nav>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="lead mb-2">Medium</h3>
+              <span class="h2 fw-bold">$149</span>
+              <p class="mt-2 mb-4 text-secondary">Our basic version for teams that are just getting started</p>
+              <a href="" class="btn btn-outline-white btn-with-icon rounded-pill">Buy Now <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-check2 me-2 fs-5 d-none d-xl-inline-block"></i> <span class="d-xl-none">Unlimited
+                  Viewers</span></li>
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-check2 me-2 fs-5 d-none d-xl-inline-block"></i> <span class="d-xl-none">Editors</span>
+              </li>
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-check2 me-2 fs-5 d-none d-xl-inline-block"></i> <span
+                  class="d-xl-none">Multiplayer</span>
+              </li>
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-check2 me-2 fs-5 d-none d-xl-inline-block"></i> <span class="d-xl-none">Developer
+                  handoff</span></li>
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-x me-2 fs-5 d-none d-xl-inline-block text-muted"></i> <span
+                  class="d-xl-none">Support</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="lead mb-2">Large</h3>
+              <span class="h2 fw-bold">$449</span>
+              <p class="mt-2 mb-4 text-secondary">Our basic version for teams that are just getting started</p>
+              <a href="" class="btn btn-outline-white btn-with-icon rounded-pill">Buy Now <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-check2 me-2 fs-5 d-none d-xl-inline-block"></i> <span class="d-xl-none">Unlimited
+                  Viewers</span></li>
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-check2 me-2 fs-5 d-none d-xl-inline-block"></i> <span class="d-xl-none">Editors</span>
+              </li>
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-check2 me-2 fs-5 d-none d-xl-inline-block"></i> <span
+                  class="d-xl-none">Multiplayer</span>
+              </li>
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-check2 me-2 fs-5 d-none d-xl-inline-block"></i> <span class="d-xl-none">Developer
+                  handoff</span></li>
+              <li class="list-group-item d-flex align-items-center py-3"><i
+                  class="bi bi-check2 me-2 fs-5 d-none d-xl-inline-block"></i> <span class="d-xl-none">Support</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
 
-  <!-- posts -->
-  <section class="py-15 py-xl-20 bg-black inverted mx-xl-3 d-none">
+  <!-- testimonials -->
+  <section class="py-15 py-xl-20 border-bottom d-none">
     <div class="container">
-      <div class="row align-items-end">
-        <div class="col-md-6">
-          <h2 class="eyebrow text-muted">Weekly highlights</h2>
-        </div>
-        <div class="col-md-6 text-end">
-          <a href="" class="eyebrow action underline">View all <i class="bi bi-arrow-right"></i></a>
+      <div class="row justify-content-center mb-5">
+        <div class="col-12">
+          <h2>Why people choose Cube ?</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <hr class="mt-3 mb-10">
-        </div>
-      </div>
-      <div class="row align-items-start justify-content-between">
-        <div class="col-lg-5">
-          <article class="card">
-            <a href="article.html" class="card-title">
-              <h3>How To Optimize Progressive Web Apps: Going Beyond The Basics</h3>
-            </a>
-            <time datetime="2020-12-20 21:30" class="eyebrow text-muted mb-1">21:30, 20 December</time>
-          </article>
+      <div class="row g-3 g-lg-5 justify-content-center">
+        <div class="col-lg-6">
+          <blockquote class="blockquote">
+            <span class="lh-1 fs-1 mb-0 text-muted">"</span>
+            <p class="fs-4 mb-3"><span class="fw-bold text-green">Build better websites.</span> A new template
+              inspired by the
+              world’s best design practices.</p>
+            <footer class="blockquote-footer">
+              <span class="d-block lh-1 text-black">Valerie Doe</span>
+              <small>Senior Product Designer</small>
+            </footer>
+          </blockquote>
         </div>
         <div class="col-lg-6">
-          <div class="row g-4" data-masonry>
+          <blockquote class="blockquote">
+            <span class="lh-1 fs-1 mb-0 text-muted">"</span>
+            <p class="fs-4 mb-3">Aperiam deserunt magnam, explicabo nihil cumque enim beatae fugit neque.</p>
+            <footer class="blockquote-footer">
+              <span class="d-block lh-1 text-black">Michael Doe</span>
+              <small>Senior Product Designer</small>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- contact -->
+  <section class="py-15 py-xl-20 d-none">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+          <h2 class="fw-bold mb-6">Let's make something big. Together.</h2>
+          <div class="row g-3">
             <div class="col-md-6">
-              <article class="card">
-                <a href="article.html" class="card-title">
-                  <h6>How To Design A Simple UI When You Have A Complex Solution</h6>
-                </a>
-                <time datetime="2020-12-18 20:00" class="eyebrow text-muted mb-1">20:00, 18
-                  December</time>
-              </article>
+              <label for="yourName" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="yourName" placeholder="Your Name">
             </div>
             <div class="col-md-6">
-              <article class="card">
-                <a href="article.html" class="card-title">
-                  <h6>Ethical Considerations In UX Research: The Need For Training And Review</h6>
-                </a>
-                <time datetime="2020-12-18 20:00" class="eyebrow text-muted mb-1">20:00, 18
-                  December</time>
-              </article>
+              <label for="yourCompany" class="form-label">Your Company</label>
+              <input type="text" class="form-control" id="yourCompany" placeholder="Your Company">
             </div>
-            <div class="col-md-6">
-              <article class="card">
-                <a href="article.html" class="card-title">
-                  <h6>Ethical Considerations In UX Research: The Need For Training And
-                    Review</h6>
-                </a>
-                <time datetime="2020-12-18 20:00" class="eyebrow text-muted mb-1">20:00, 18
-                  December</time>
-              </article>
+            <div class="col-md-12">
+              <label for="yourMessage" class="form-label">Message</label>
+              <textarea class="form-control" id="yourMessage" rows="3" placeholder="Message"></textarea>
             </div>
-            <div class="col-md-6">
-              <article class="card">
-                <a href="article.html" class="card-title">
-                  <h6>A Simple Day Illustration Series</h6>
-                </a>
-                <time datetime="2020-12-18 20:00" class="eyebrow text-muted mb-1">20:00, 18
-                  December</time>
-              </article>
+            <div class="col-md-8 mt-4">
+              <a href="" class="btn btn-lg btn-green btn-with-icon rounded-pill">Start 30 Days Trial <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -701,14 +683,14 @@
 
 
   <!-- footer -->
-  <footer class="py-15 py-xl-20 border-top">
+  <footer class="py-15 py-xl-20 bg-black inverted">
     <div class="container">
       <div class="row g-4 g-lg-5 mb-10">
         <div class="col-md-3 text-center text-md-start">
-          <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-dark.svg" alt="Logo"></a>
+          <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-light.svg" alt="Logo"></a>
         </div>
-        <div class="col-md-4 col-lg-5 text-center text-md-start d-none">
-          <ul class="list-unstyled">
+        <div class="col-md-4 col-lg-5 text-center text-md-start">
+          <ul class="list-unstyled d-none">
             <li class="mb-1"><a href="" class="text-reset text-primary-hover">documentation</a></li>
             <li class="mb-1"><a href="" class="text-reset text-primary-hover">components</a></li>
             <li class="mb-1"><a href="" class="text-reset text-primary-hover">blocks</a></li>
@@ -721,10 +703,10 @@
             <div class="row">
               <div class="col">
                 <input type="text" class="form-control rounded-pill px-3" aria-label="Text input"
-                  placeholder="Votre email">
+                  placeholder="Your email">
               </div>
               <div class="col-auto">
-                <a href="" class="btn btn-primary btn-icon rounded-circle"><i class="bi bi-arrow-return-left"></i></a>
+                <a href="" class="btn btn-white btn-icon rounded-circle"><i class="bi bi-arrow-return-left"></i></a>
               </div>
             </div>
           </div>
@@ -734,11 +716,12 @@
         <div class="col-md-6 col-lg-5 order-lg-2 text-center text-md-start">
           <ul class="list-inline small">
             <li class="list-inline-item"><a href="" class="text-reset text-primary-hover">facebook</a></li>
-            <li class="list-inline-item ms-1"><a href="" class="text-reset text-primary-hover">instagram</a></li>
+            <li class="list-inline-item ms-1"><a href="" class="text-reset text-primary-hover">twitter</a></li>
+            <li class="list-inline-item ms-1"><a href="" class="text-reset text-primary-hover">linkedin</a></li>
           </ul>
         </div>
         <div class="col-md-6 col-lg-4 text-center text-md-end order-lg-3">
-          <span class="small">97 Boulevard Magenta, 75010 Paris, France.</span>
+          <span class="small">97 Boulevard Magentan 75010 Paris.</span>
         </div>
         <div class="col-lg-3 order-lg-1 text-center text-md-start">
           <p class="small">Copyrights © 2025</p>
@@ -746,6 +729,7 @@
       </div>
     </div>
   </footer>
+
   <!-- javascript -->
   <script src="./assets/js/vendor.bundle.js"></script>
   <script src="./assets/js/index.bundle.js"></script></body>
