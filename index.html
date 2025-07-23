@@ -17,246 +17,180 @@
   <!-- Title -->
   <title>Software</title></head>
 
+<!-- TON CSS PERSONNALISÉ -->
+<style>
+  .text-gold {
+    color: #c9a343;
+  }
+
+  .card-bordered {
+    border: 1px solid #dee2e6;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fff;
+  }
+
+  .card-bordered:hover {
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.06);
+    transform: translateY(-4px);
+  }
+
+  .expert-icon {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(201, 163, 67, 0.1); /* doré léger */
+    color: #c9a343;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+
+  .rating i {
+    font-size: 1.1rem;
+  }
+
+  .navbar-nav .nav-link {
+    position: relative;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+    padding-bottom: 0.3rem;
+  }
+
+  .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #198754;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .navbar-nav .nav-link:hover::after,
+  .navbar-nav .nav-link.active::after {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link.active {
+    color: #198754;
+    font-weight: 600;
+  }
+
+  .dropdown-menu .dropdown-item i {
+    opacity: 0.6;
+    font-size: 1rem;
+  }
+
+</style>
 <body>
 
+<!-- NavBar -->
 
-  <!-- navbar -->
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-light py-0">
-    <div class="container">
-      <a href="./index.html" class="navbar-brand fs-1 "><img src="./assets/images/logo/Serge.png" alt="Logo" style="max-height: 5rem;"></a>
+<!-- Navbar -->
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-light py-0">
+  <div class="container">
+    <a href="./index.html" class="navbar-brand fs-1">
+      <img src="./assets/images/logo/Serge.png" alt="Logo" style="max-height: 5rem;">
+    </a>
 
-      <!-- secondary -->
-      <ul class="navbar-nav navbar-nav-secondary order-lg-3">
-        <li class="nav-item d-lg-none">
-          <a class="nav-link nav-icon" href="" role="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="bi bi-list"></span>
+    <!-- CTA bouton -->
+    <ul class="navbar-nav navbar-nav-secondary order-lg-3">
+      <li class="nav-item d-lg-none">
+        <a class="nav-link nav-icon" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+           aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bi bi-list"></span>
+        </a>
+      </li>
+      <li class="nav-item d-none d-lg-block">
+        <a href="#contact" class="btn btn-outline-black rounded-pill ms-2">Planifiez votre expertise</a>
+      </li>
+    </ul>
+
+    <!-- Menu principal -->
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav ms-auto">
+        <!-- Menu Blog -->
+        <li class="nav-item dropdown dropdown-hover">
+          <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
           </a>
+          <ul class="dropdown-menu shadow-sm border-0 bg-white p-2 rounded" aria-labelledby="blogDropdown">
+            <li><a class="dropdown-item" href="blog1.html"><i class="bi bi-journal-text me-1"></i> Comment faire expertiser ses bijoux à Paris ?</a></li>
+            <li><a class="dropdown-item" href="blog2.html"><i class="bi bi-gem me-1"></i> Estimation de pierres précieuses et diamants</a></li>
+            <li><a class="dropdown-item" href="blog3.html"><i class="bi-shop-window  me-1"></i> Vendre ses bijoux anciens à Paris</a></li>
+          </ul>
         </li>
-        <li class="nav-item d-none d-lg-block">
-          <a href="" class="btn btn-outline-black rounded-pill ms-2">
-            Planifiez votre expertise
+
+        <!-- Menu Achat -->
+        <li class="nav-item dropdown dropdown-hover">
+          <a class="nav-link dropdown-toggle" href="#" id="achatDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Achat
           </a>
+          <ul class="dropdown-menu shadow-sm border-0 bg-white p-2 rounded" aria-labelledby="achatDropdown">
+            <li><a class="dropdown-item" href="achatBijouxAnciens.html"><i class="bi bi-hourglass-split me-1"></i> Achat de bijoux anciens</a></li>
+            <li><a class="dropdown-item" href="achatBijouxSignés.html"><i class="bi bi-pen me-1"></i> Achat de bijoux signés</a></li>
+            <li><a class="dropdown-item" href="achatOr.html"><i class="bi bi-currency-euro me-1"></i> Achat d'or</a></li>
+            <li><a class="dropdown-item" href="achatPierresPrecieuses.html"><i class="bi bi-gem me-1"></i> Achat de pierres précieuses</a></li>
+          </ul>
         </li>
       </ul>
-  
-      <!-- primary -->
-      <div class="collapse navbar-collapse d-none" id="navbar" data-bs-parent="#mainNav">
-        <ul class="navbar-nav d-none">
-          <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Landings
-            </a>
-  
-            <ul class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown-1">
-              <li><a class="dropdown-item "
-                  href="./startup.html">Startup</a></li>
-              <li><a class="dropdown-item " href="./saas.html">Saas</a>
-              </li>
-              <li><a class="dropdown-item "
-                  href="./coworking.html">Coworking</a></li>
-              <li><a class="dropdown-item "
-                  href="./job-board.html">Job Board</a></li>
-              <li><a class="dropdown-item "
-                  href="./agency.html">Agency</a>
-              </li>
-              <li><a class="dropdown-item " href="./blog.html">Blog</a>
-              </li>
-              <li><a class="dropdown-item "
-                  href="./product.html">Product</a></li>
-              <li><a class="dropdown-item " href="./app.html">App</a>
-              </li>
-              <li><a class="dropdown-item " href="./shop.html">Shop</a>
-              </li>
-              <li><a class="dropdown-item "
-                  href="./event.html">Event</a></li>
-              <li><a class="dropdown-item "
-                  href="./course.html">Course</a>
-              </li>
-              <li><a class="dropdown-item "
-                  href="./service.html">Service</a></li>
-              <li><a class="dropdown-item active"
-                  href="./software.html">Software</a></li>
-              <li><a class="dropdown-item "
-                  href="./documentation.html">Documentation</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-2" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Pages
-            </a>
-            <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown-2">
-              <div class="row g-0">
-                <div class="col-6">
-                  <div class="p-4">
-                    <span class="dropdown-label">Company</span>
-                    <a class="dropdown-item "
-                      href="./about.html">About</a>
-                    <a class="dropdown-item "
-                      href="./pricing.html">Pricing</a>
-                    <a class="dropdown-item " href="./faq.html">FAQ</a>
-                    <a class="dropdown-item "
-                      href="./terms.html">Terms</a>
-                    <a class="dropdown-item "
-                      href="./services.html">Services</a>
-                    <a class="dropdown-item "
-                      href="./job-listing.html">Job Listing</a>
-                    <a class="dropdown-item "
-                      href="./job-post.html">Job Post</a>
-                    <span class="dropdown-label">Portfolio</span>
-                    <a class="dropdown-item "
-                      href="./portfolio-grid.html">Grid</a>
-                    <a class="dropdown-item "
-                      href="./portfolio-list.html">List</a>
-                    <a class="dropdown-item "
-                      href="./case-study.html">Case Study</a>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="p-4">
-                    <span class="dropdown-label">Blog</span>
-                    <a class="dropdown-item "
-                      href="./blog-listing.html">Listing</a>
-                    <a class="dropdown-item "
-                      href="./blog-post.html">Post</a>
-                    <span class="dropdown-label">Contact</span>
-                    <a class="dropdown-item "
-                      href="./contact.html">Classic</a>
-                    <a class="dropdown-item "
-                      href="./contact-location.html">Location</a>
-                    <span class="dropdown-label">Utilities</span>
-                    <a class="dropdown-item " href="./404.html">404</a>
-                    <a class="dropdown-item "
-                      href="./coming-soon.html">Coming Soon</a>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <a href="" class="card card-arrow inverted bg-green">
-                    <div class="card-footer mt-auto">
-                      <h4 class="lead lh-3 fw-light">Buy Cube</h4>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false" data-bs-auto-close="outside">
-              Account
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown-3">
-              <li><a class="dropdown-item "
-                  href="./account.html">Dashboard</a></li>
-              <li><a class="dropdown-item "
-                  href="./account-settings.html">Settings</a></li>
-              <li><a class="dropdown-item "
-                  href="./account-orders.html">Orders</a></li>
-              <li><a class="dropdown-item "
-                  href="./account-billing.html">Billing</a></li>
-              <li><a class="dropdown-item " href="./sign-in.html">Sign
-                  in</a></li>
-              <li><a class="dropdown-item "
-                  href="./register.html">Register</a></li>
-              <li><a class="dropdown-item "
-                  href="./forgot-password.html">Forgot Password</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-4" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false" data-bs-auto-close="outside">
-              Shop
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown-4">
-              <li><a class="dropdown-item "
-                  href="./shop-product.html">Product</a></li>
-              <li class="dropend dropend-hover">
-                <a class="dropdown-item dropdown-toggle  "
-                  href="#" id="navbarDropend-1" data-bs-toggle="dropdown" aria-expanded="false"
-                  data-bs-auto-close="outside">Listing</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropend-1">
-                  <li><a class="dropdown-item "
-                      href="./shop-listing.html">Full width</a></li>
-                  <li><a class="dropdown-item "
-                      href="./shop-listing-sidebar.html">Sidebar</a></li>
-                </ul>
-              </li>
-              <li><a class="dropdown-item "
-                  href="./shop-cart.html">Cart</a></li>
-              <li><a class="dropdown-item "
-                  href="./shop-checkout.html">Checkout</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-5" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Docs
-            </a>
-            <ul class="dropdown-menu dropdown-menu-detailed" aria-labelledby="navbarDropdown-5">
-              <li><a class="dropdown-item " href="./docs/index.html">
-                  <span>
-                    <i class="bi bi-book"></i>
-                    Get Started
-                    <small>Customising and building</small>
-                  </span>
-                </a>
-              </li>
-              <li><a class="dropdown-item "
-                  href="./docs/accordion.html">
-                  <span>
-                    <i class="bi bi-grid"></i>
-                    Components
-                    <small>Full list of components</small>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item d-lg-none">
-            <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
-              class="nav-link text-primary">Buy Cube</a>
-          </li>
-        </ul>
-      </div>
-  
-  
-  
-      <!-- mobile user menu -->
-  
-  
-  
-  
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- header test -->
-  <section class="">
+  <section class="pt-6">
     <div class="container py-5">
       <div class="row align-items-center justify-content-center justify-content-lg-between mt-lg-10">
 
         <!-- IMAGE -->
         <div class="col-12 col-lg-6 order-1 order-lg-2 overflow-hidden p-0" data-aos="fade-in">
           <figure class="media media-image">
-            <img src="./assets/images/7.jpg" alt="Expertise bijou" class="img-fluid w-100" />
+            <img src="./assets/images/sb5.png" alt="Expertise bijoux" class="img-fluid w-100" style="max-height: 300px; object-fit: cover;" />
           </figure>
         </div>
 
         <!-- TEXTE -->
-        <div class="col-12 col-lg-5 text-center text-lg-start order-2 order-lg-1">
-          <h2 class="fw-light">Expertisez gratuitement vos bijoux, sur rendez-vous.</h2>
-          <p class="lead text-secondary mb-2">
-            Notre boutique, située au <strong>97 boulevard Magenta, Paris 10e</strong>, vous accueille dans un cadre confidentiel pour une estimation gratuite de vos bijoux, diamants et pierres précieuses.
+        <div class="col-12 col-lg-5 text-center text-lg-start order-2 order-lg-1 pt-1">
+          <h2 class="fw-light ">Expertisez gratuitement vos bijoux.</h2>
+          <p class="lead text-dark-emphasis fw-medium mb-3" style="font-size: 1.15rem; line-height: 1.6;">
+            Nous vous recevons <span class="text-decoration-underline">en toute confidentialité</span> pour une
+            <strong>estimation gratuite</strong> de vos <strong>bijoux</strong>, <strong>diamants</strong>,
+            <strong>or</strong> et <strong>pierres précieuses</strong>.
           </p>
-          <p class="text-secondary mb-1"><i class="bi bi-geo-alt me-2"></i>97 Boulevard Magenta, 75010 Paris</p>
-          <p class="text-secondary mb-0">
-            <i class="bi bi-telephone me-2"></i>
-            <a href="tel:+33147701089" class="text-secondary text-decoration-none">01 47 70 10 89</a>
+          <!-- ADRESSE -->
+          <p class="mb-1">
+            <a href="https://maps.google.com/?q=97 Boulevard Magenta, 75010 Paris" target="_blank" class="text-decoration-none text-dark">
+              <i class="bi bi-geo-alt me-2 text-primary"></i>
+              <strong>97 Boulevard Magenta, 75010 Paris</strong>
+            </a>
           </p>
-          <a href="#" class="btn btn-dark btn-with-icon rounded-pill btn-lg mt-2">
-            Planifier mon expertise <i class="bi bi-arrow-right"></i>
+
+          <!-- TÉLÉPHONE -->
+          <p class="mb-0">
+            <a href="tel:+33147701089" class="text-decoration-none text-dark">
+              <i class="bi bi-telephone me-2 text-primary"></i>
+              <strong>01 47 70 10 89</strong>
+            </a>
+          </p>
+          </p>
+          <a href="#formulaire" class="btn btn-dark rounded-pill px-4 py-2 d-inline-flex align-items-center cta-animated">
+            <span class="me-2 ">Planifier mon expertise</span>
+            <i class="bi bi-arrow-right transition"></i>
           </a>
+
+          <style>
+            .cta-animated:hover i {
+              transform: translateX(4px);
+              transition: transform 0.2s ease;
+            }
+          </style>
         </div>
 
       </div>
@@ -327,8 +261,52 @@
     </div>
   </section>
 
-  <!-- browser -->
-  <section class="py-15 py-xl-20 border-top">
+
+  <!-- Histoire -->
+  <section class="py-15 py-xl-20 border-top bg-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+
+        <!-- CARROUSEL D'IMAGES -->
+        <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+          <div class="carousel carousel-with-nav rounded shadow overflow-hidden">
+            <div data-carousel='{"mouseDrag": true, "gutter": 0, "loop": true, "items": 1, "nav": true}'>
+              <div>
+                <img src="./assets/images/horlogerie.jpg" class="img-fluid" alt="Horlogerie">
+              </div>
+              <div>
+                <img src="./assets/images/sb6.png" class="img-fluid" alt="Joaillerie">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TEXTE HISTOIRE -->
+        <div class="col-lg-5">
+          <h2 class="fw-bold mb-4 position-relative d-inline-block">
+            Notre histoire
+            <span style="position:absolute; left:0; bottom:0; width:80px; height:4px; background-color:#c9a343;"></span>
+          </h2>
+          <p class="lead text-dark" style="line-height: 1.7;">
+            <strong>Fondée en 1974</strong>, Serge Bijoutier est une maison familiale transmise de père en fils depuis deux générations.
+            Ce <strong>savoir-faire joaillier</strong>, patiemment cultivé au fil des décennies, s’incarne aujourd’hui dans une approche
+            exigeante de l’expertise.
+          </p>
+          <p class="text-muted" style="line-height: 1.6;">
+            Diamants, montres de collection, bijoux anciens ou contemporains…
+            <br>Chaque pièce est examinée avec rigueur, <strong>dans un cadre confidentiel et sans engagement</strong>.
+          </p>
+
+          <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2 mt-4">
+            En savoir plus <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- histoire -->
+  <section class="py-15 py-xl-20 border-top d-none">
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-lg-6 inverted" data-aos="fade-up">
@@ -364,8 +342,72 @@
   </section>
 
 
-  <!-- features -->
-  <section class="py-15 py-xl-20">
+  <!-- Estimez et vendez -->
+  <section class="py-15 py-xl-20 border-top">
+    <div class="container">
+
+      <!-- Titre -->
+      <div class="row justify-content-center mb-10">
+        <div class="col-lg-8 text-center">
+          <h2 class="fw-bold mb-3 position-relative d-inline-block">
+            Estimez et vendez en toute simplicité.
+            <span style="position:absolute; left:50%; transform:translateX(-50%); bottom:-8px; width:100px; height:4px; background-color:#c9a343;"></span>
+          </h2>
+          <p class="text-muted fs-5 mt-3">Un accompagnement discret, transparent et sur mesure, à chaque étape de votre démarche.</p>
+        </div>
+      </div>
+
+      <!-- Cartes -->
+      <div class="row g-4">
+        <div class="col-lg-4" data-aos="fade-up">
+          <div class="card card-bordered h-100 text-center p-4">
+            <div class="mb-3">
+              <i class="bi bi-bookmark-fill fs-1 text-gold"></i>
+            </div>
+            <h3 class="fs-5 mb-2">Estimation experte</h3>
+            <p class="text-secondary">
+              Recevez une évaluation précise et sans engagement de vos bijoux, réalisée par nos experts directement en boutique.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card card-bordered h-100 text-center p-4">
+            <div class="mb-3">
+              <i class="bi bi-eye-fill fs-1 text-gold"></i>
+            </div>
+            <h3 class="fs-5 mb-2">Processus transparent</h3>
+            <p class="text-secondary">
+              Chaque étape de la vente est expliquée clairement, pour une expérience sereine et en toute confiance.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card card-bordered h-100 text-center p-4">
+            <div class="mb-3">
+              <i class="bi bi-cash-coin fs-1 text-gold"></i>
+            </div>
+            <h3 class="fs-5 mb-2">Offre immédiate</h3>
+            <p class="text-secondary">
+              Si vous le souhaitez, nous vous faisons une proposition d’achat immédiate, sans obligation d’acceptation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA plus petit -->
+      <div class="text-center mt-5">
+        <a href="#formulaire" class="btn btn-dark rounded-pill px-4 py-2 fs-6">
+          Planifier mon expertise <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Estimez et vendez -->
+  <section class="py-15 py-xl-20 d-none">
     <div class="container">
       <div class="row justify-content-center mb-10">
         <div class="col-lg-6 text-center">
@@ -416,9 +458,67 @@
 
 
 
+  <!-- Experts -->
+  <section class="pb-15 pb-xl-20 border-top pt-2">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
 
-  <!-- browser -->
-  <section class="pb-15 pb-xl-20">
+        <!-- Texte + sous-sections -->
+        <div class="col-lg-5">
+          <h2 class="fw-bold mb-4 position-relative d-inline-block">
+            Une expertise reconnue
+            <span style="position:absolute; left:0; bottom:-8px; width:80px; height:4px; background-color:#c9a343;"></span>
+          </h2>
+          <p class="text-muted mb-5">
+            Notre équipe évalue avec précision tous types de bijoux et objets précieux. Voici nos spécialités :
+          </p>
+
+          <div class="d-flex mb-4">
+            <div class="expert-icon me-3"><i class="bi bi-gem"></i></div>
+            <div>
+              <h5 class="mb-1 fw-semibold">Bijoux anciens</h5>
+              <p class="text-muted mb-0">Estimation de pièces de famille ou de collection, avec attention portée à l’époque, au style et aux matériaux.</p>
+            </div>
+          </div>
+
+          <div class="d-flex mb-4">
+            <div class="expert-icon me-3"><i class="bi bi-award"></i></div>
+            <div>
+              <h5 class="mb-1 fw-semibold">Bijoux signés</h5>
+              <p class="text-muted mb-0">Spécialistes des grandes maisons (Cartier, Boucheron, Van Cleef…), nous reconnaissons leur valeur réelle.</p>
+            </div>
+          </div>
+
+          <div class="d-flex mb-4">
+            <div class="expert-icon me-3"><i class="bi bi-diamond"></i></div>
+            <div>
+              <h5 class="mb-1 fw-semibold">Pierres précieuses</h5>
+              <p class="text-muted mb-0">Diamants, saphirs, émeraudes, rubis : nos gemmologues évaluent chaque pierre avec précision.</p>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <div class="expert-icon me-3"><i class="bi bi-currency-euro"></i></div>
+            <div>
+              <h5 class="mb-1 fw-semibold">Or</h5>
+              <p class="text-muted mb-0">Rachat et valorisation de l’or sous toutes ses formes (lingots, bijoux, or dentaire…), selon le cours actuel.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-up">
+          <div class="rounded shadow overflow-hidden">
+            <img src="./assets/images/7.jpg" class="img-fluid" alt="Expert bijou">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- experts -->
+  <section class="pb-15 pb-xl-20 d-none">
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-lg-5">
@@ -460,8 +560,75 @@
     </div>
   </section>
 
+  <!-- Avis clients -->
+  <section class="pb-15 pb-xl-20 pt-3">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <span class="text-muted text-uppercase small">Ils nous font confiance</span>
+          <h2 class="fw-bold mt-2">Plus de 1 400 avis clients, tous authentiques</h2>
+        </div>
+      </div>
+
+      <!-- Cartes de témoignages -->
+      <div class="row g-4">
+
+        <!-- Témoignage 1 -->
+        <div class="col-lg-6">
+          <div class="card card-bordered h-100 p-4 bg-white">
+            <div class="d-flex align-items-center mb-3">
+              <span class="fs-3 fw-bold text-dark me-2">5.0</span>
+              <ul class="rating text-gold list-inline mb-0">
+                <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+              </ul>
+            </div>
+            <p class="text-secondary mb-3">
+              “Accueil agréable. Estimation de bijoux assortie d'une explication justifiant le prix proposé. Conseils avisés. Je recommande vivement.”
+            </p>
+            <p class="fw-semibold mb-0 text-dark">Marie-Pierre Bourguignon</p>
+          </div>
+        </div>
+
+        <!-- Témoignage 2 -->
+        <div class="col-lg-6">
+          <div class="card card-bordered h-100 p-4 bg-white">
+            <div class="d-flex align-items-center mb-3">
+              <span class="fs-3 fw-bold text-dark me-2">5.0</span>
+              <ul class="rating text-gold list-inline mb-0">
+                <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+              </ul>
+            </div>
+            <p class="text-secondary mb-3">
+              “Très professionnel, accueil chaleureux, estimation transparente et offre honnête. Je suis reparti serein. Merci.”
+            </p>
+            <p class="fw-semibold mb-0 text-dark">Enzo Alaimo</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA Google -->
+      <div class="row mt-5">
+        <div class="col text-center">
+          <a href="https://g.co/kgs/PEF1AyF" target="_blank" rel="noopener noreferrer"
+             class="btn btn-outline-dark rounded-pill px-4 py-2">
+            Voir tous nos avis sur Google
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- reviews -->
-  <section class="py-20">
+  <section class="pb-15 pb-xl-20 d-none">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-10">
@@ -682,28 +849,27 @@
   </section>
 
 
-
   <!-- contact -->
-  <section class="py-15 py-xl-20 d-none">
+  <section class="py-5 py-xl-10">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 col-xl-6">
-          <h2 class="fw-bold mb-6">Let's make something big. Together.</h2>
+          <h2 class="fw-bold mb-6">Vous avez une question ?</h2>
           <div class="row g-3">
             <div class="col-md-6">
-              <label for="yourName" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="yourName" placeholder="Your Name">
+              <label for="yourName" class="form-label">Votre nom</label>
+              <input type="text" class="form-control" id="yourName" placeholder="Votre Nom">
             </div>
             <div class="col-md-6">
-              <label for="yourCompany" class="form-label">Your Company</label>
-              <input type="text" class="form-control" id="yourCompany" placeholder="Your Company">
+              <label for="yourCompany" class="form-label">Votre email</label>
+              <input type="email" class="form-control" id="yourCompany" placeholder="Votre email">
             </div>
             <div class="col-md-12">
               <label for="yourMessage" class="form-label">Message</label>
               <textarea class="form-control" id="yourMessage" rows="3" placeholder="Message"></textarea>
             </div>
             <div class="col-md-8 mt-4">
-              <a href="" class="btn btn-lg btn-green btn-with-icon rounded-pill">Start 30 Days Trial <i
+              <a href="" class="btn btn-lg btn-green btn-with-icon rounded-pill">Envoyer ma demande <i
                   class="bi bi-arrow-right"></i></a>
             </div>
           </div>
@@ -711,10 +877,81 @@
       </div>
     </div>
   </section>
-
-
   <!-- footer -->
-  <footer class="py-15 py-xl-20 bg-black inverted">
+  <footer class="py-5 bg-black text-white border-top">
+    <div class="container">
+
+      <!-- Haut du footer -->
+      <div class="row justify-content-between align-items-start mb-5">
+
+        <!-- Logo + description -->
+        <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
+          <a href="./index.html" class="navbar-brand">
+            <img src="./assets/images/logo/Serge-white.png" alt="Logo Serge Bijoutier" style="max-height: 60px;">
+          </a>
+          <p class="small mt-3 text-muted">
+            Expertise gratuite, discrétion assurée, rachat immédiat de vos bijoux, or et diamants.
+          </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
+          <h6 class="text-uppercase mb-3 d-none">Nous contacter</h6>
+          <p class="mb-2">
+            <i class="bi bi-geo-alt-fill me-2 text-gold"></i>
+            <a href="https://maps.google.com/?q=97 Boulevard Magenta, 75010 Paris" target="_blank" class="text-reset text-decoration-none">
+              97 Boulevard Magenta, 75010 Paris
+            </a>
+          </p>
+          <p class="mb-2">
+            <i class="bi bi-telephone-fill me-2 text-gold"></i>
+            <a href="tel:+33147701089" class="text-reset text-decoration-none">01 47 70 10 89</a>
+          </p>
+          <p class="mb-2">
+            <i class="bi bi-envelope-fill me-2 text-gold"></i>
+            <a href="mailto:contact@expertise-bijoux-paris.com" class="text-reset text-decoration-none">contact@expertise-bijoux-paris.com</a>
+          </p>
+          <p class="mb-0">
+            <i class="bi bi-clock-fill me-2 text-gold"></i>
+            Lundi au vendredi : 10h00 – 18h45
+          </p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-md-4 d-none">
+          <h6 class="text-uppercase mb-3">Recevez nos actualités</h6>
+          <form class="d-flex bg-white rounded-pill overflow-hidden">
+            <input type="email" class="form-control border-0 px-4 py-2 rounded-0" placeholder="Votre email">
+            <button class="btn btn-dark px-4" type="submit">
+              <i class="bi bi-envelope-fill"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bas du footer -->
+      <div class="row align-items-center  border-white-10 text-muted small">
+
+        <div class="col-md-4 text-center text-md-start mb-2 mb-md-0">
+          <span>© 2025 Serge Bijoutier</span>
+        </div>
+
+        <div class="col-md-4 text-center mb-2 mb-md-0">
+          <span>Tous droits réservés</span>
+        </div>
+
+        <div class="col-md-4 text-center text-md-end">
+          <a href="#" class="text-reset me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-reset me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-reset"><i class="bi bi-google"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+  <footer class="py-15 py-xl-20 bg-black inverted d-none">
     <div class="container">
       <div class="row g-4 g-lg-5 mb-10">
         <div class="col-md-3 text-center text-md-start">
