@@ -53,38 +53,6 @@
     font-size: 1.1rem;
   }
 
-  .navbar-nav .nav-link {
-    position: relative;
-    font-weight: 500;
-    transition: color 0.2s ease-in-out;
-    padding-bottom: 0.3rem;
-  }
-
-  .navbar-nav .nav-link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background-color: #198754;
-    transition: width 0.3s ease-in-out;
-  }
-
-  .navbar-nav .nav-link:hover::after,
-  .navbar-nav .nav-link.active::after {
-    width: 100%;
-  }
-
-  .navbar-nav .nav-link.active {
-    color: #198754;
-    font-weight: 600;
-  }
-
-  .dropdown-menu .dropdown-item i {
-    opacity: 0.6;
-    font-size: 1rem;
-  }
 
 </style>
 <body>
@@ -253,79 +221,79 @@
 </article>
 
 
-  <!-- footer -->
-  <footer class="py-5 bg-black text-white border-top">
-    <div class="container">
+<!-- footer -->
+<footer class="py-5 bg-black text-white border-top">
+  <div class="container">
 
-      <!-- Haut du footer -->
-      <div class="row justify-content-between align-items-start mb-5">
+    <!-- Haut du footer -->
+    <div class="row justify-content-between align-items-start mb-5">
 
-        <!-- Logo + description -->
-        <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
-          <a href="./index.html" class="navbar-brand">
-            <img src="./assets/images/logo/Serge-white.png" alt="Logo Serge Bijoutier" style="max-height: 60px;">
+      <!-- Logo + description -->
+      <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
+        <a href="./index.html" class="navbar-brand">
+          <img src="./assets/images/logo/blanc.png" alt="Logo Serge Bijoutier" style="max-height: 60px;">
+        </a>
+        <p class="small mt-3 text-muted ">
+          Expertise gratuite, discrétion assurée, rachat immédiat de vos bijoux, or et diamants.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
+        <h6 class="text-uppercase mb-3 d-none">Nous contacter</h6>
+        <p class="mb-2">
+          <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
+          <a href="https://maps.google.com/?q=97 Boulevard Magenta, 75010 Paris" target="_blank" class="text-reset text-decoration-none">
+            97 Boulevard Magenta, 75010 Paris
           </a>
-          <p class="small mt-3 text-muted">
-            Expertise gratuite, discrétion assurée, rachat immédiat de vos bijoux, or et diamants.
-          </p>
-        </div>
-
-        <!-- Contact -->
-        <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
-          <h6 class="text-uppercase mb-3 d-none">Nous contacter</h6>
-          <p class="mb-2">
-            <i class="bi bi-geo-alt-fill me-2 text-gold"></i>
-            <a href="https://maps.google.com/?q=97 Boulevard Magenta, 75010 Paris" target="_blank" class="text-reset text-decoration-none">
-              97 Boulevard Magenta, 75010 Paris
-            </a>
-          </p>
-          <p class="mb-2">
-            <i class="bi bi-telephone-fill me-2 text-gold"></i>
-            <a href="tel:+33147701089" class="text-reset text-decoration-none">01 47 70 10 89</a>
-          </p>
-          <p class="mb-2">
-            <i class="bi bi-envelope-fill me-2 text-gold"></i>
-            <a href="mailto:contact@expertise-bijoux-paris.com" class="text-reset text-decoration-none">contact@expertise-bijoux-paris.com</a>
-          </p>
-          <p class="mb-0">
-            <i class="bi bi-clock-fill me-2 text-gold"></i>
-            Lundi au vendredi : 10h00 – 18h45
-          </p>
-        </div>
-
-        <!-- Newsletter -->
-        <div class="col-md-4 d-none">
-          <h6 class="text-uppercase mb-3">Recevez nos actualités</h6>
-          <form class="d-flex bg-white rounded-pill overflow-hidden">
-            <input type="email" class="form-control border-0 px-4 py-2 rounded-0" placeholder="Votre email">
-            <button class="btn btn-dark px-4" type="submit">
-              <i class="bi bi-envelope-fill"></i>
-            </button>
-          </form>
-        </div>
-
+        </p>
+        <p class="mb-2">
+          <i class="bi bi-telephone-fill me-2 text-primary"></i>
+          <a href="tel:+33147701089" class="text-reset text-decoration-none">01 47 70 10 89</a>
+        </p>
+        <p class="mb-2">
+          <i class="bi bi-envelope-fill me-2 text-primary"></i>
+          <a href="mailto:contact@expertise-bijoux-paris.com" class="text-reset text-decoration-none">contact@expertise-bijoux-paris.com</a>
+        </p>
+        <p class="mb-0">
+          <i class="bi bi-clock-fill me-2 text-primary"></i>
+          Lundi au vendredi : 10h00 – 18h45
+        </p>
       </div>
 
-      <!-- Bas du footer -->
-      <div class="row align-items-center  border-white-10 text-muted small">
-
-        <div class="col-md-4 text-center text-md-start mb-2 mb-md-0">
-          <span>© 2025 Serge Bijoutier</span>
-        </div>
-
-        <div class="col-md-4 text-center mb-2 mb-md-0">
-          <span>Tous droits réservés</span>
-        </div>
-
-        <div class="col-md-4 text-center text-md-end">
-          <a href="#" class="text-reset me-2"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-reset me-2"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-reset"><i class="bi bi-google"></i></a>
-        </div>
-
+      <!-- Newsletter -->
+      <div class="col-md-4 d-none">
+        <h6 class="text-uppercase mb-3">Recevez nos actualités</h6>
+        <form class="d-flex bg-white rounded-pill overflow-hidden">
+          <input type="email" class="form-control border-0 px-4 py-2 rounded-0" placeholder="Votre email">
+          <button class="btn btn-dark px-4" type="submit">
+            <i class="bi bi-envelope-fill"></i>
+          </button>
+        </form>
       </div>
+
     </div>
-  </footer>
+
+    <!-- Bas du footer -->
+    <div class="row align-items-center  border-white-10 text-muted small">
+
+      <div class="col-md-4 text-center text-md-start mb-2 mb-md-0">
+        <span>© 2025 Serge Bijoutier</span>
+      </div>
+
+      <div class="col-md-4 text-center mb-2 mb-md-0">
+        <span>Tous droits réservés</span>
+      </div>
+
+      <div class="col-md-4 text-center text-md-end d-none">
+        <a href="#" class="text-reset me-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-reset me-2"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-reset"><i class="bi bi-google"></i></a>
+      </div>
+
+    </div>
+  </div>
+</footer>
 
   <!-- javascript -->
   <script src="./assets/js/vendor.bundle.js"></script>
