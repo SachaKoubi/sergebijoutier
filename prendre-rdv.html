@@ -237,7 +237,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<!-- HubSpot meeting booked listener (fallback tracking if redirect fails) -->
+<!-- HubSpot meeting booked listener: fire GTM event then redirect parent window -->
 <script>
   (function() {
     var fired = false;
@@ -247,7 +247,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       if (payload && payload.meetingBookSucceeded && !fired) {
         fired = true;
         window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({ event: 'hubspot_meeting_booked' });
+        window.dataLayer.push({
+          event: 'hubspot_meeting_booked',
+          eventCallback: function() { window.location.href = './merci-rdv.html'; },
+          eventTimeout: 1500
+        });
+        setTimeout(function() { window.location.href = './merci-rdv.html'; }, 1500);
       }
     });
   })();
