@@ -244,13 +244,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     function redirect() {
       if (fired) return;
       fired = true;
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: 'hubspot_meeting_booked',
-        eventCallback: function() { window.location.href = './merci-rdv.html'; },
-        eventTimeout: 1500
-      });
-      setTimeout(function() { window.location.href = './merci-rdv.html'; }, 1500);
+      try { sessionStorage.setItem('hs_booking_pending', '1'); } catch (e) {}
+      window.location.href = './merci-rdv.html';
     }
 
     window.addEventListener('message', function(event) {

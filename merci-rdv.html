@@ -10,10 +10,17 @@
   })(window,document,'script','dataLayer','GTM-MH55248X');</script>
   <!-- End Google Tag Manager -->
 
-  <!-- Conversion event: HubSpot meeting booked -->
+  <!-- Conversion event: only fire if user comes from a real booking (flag set on prendre-rdv) -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: 'hubspot_meeting_booked' });
+    (function() {
+      try {
+        if (sessionStorage.getItem('hs_booking_pending') === '1') {
+          sessionStorage.removeItem('hs_booking_pending');
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: 'hubspot_meeting_booked' });
+        }
+      } catch (e) {}
+    })();
   </script>
 
   <meta charset="utf-8" />
