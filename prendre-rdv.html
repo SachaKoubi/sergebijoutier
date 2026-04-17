@@ -256,9 +256,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     window.addEventListener('message', function(event) {
       if (!event.origin || event.origin.indexOf('hubspot') === -1) return;
 
-      // Debug: log all HubSpot messages to the console
-      console.log('[HubSpot message]', event.origin, event.data);
-
       var data = event.data;
       if (!data) return;
 
